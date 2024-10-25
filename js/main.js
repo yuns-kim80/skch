@@ -7,12 +7,9 @@ $('header #gnb>li').mouseover(function() {
   $('header #gnb').removeClass('over')
 })
 
-// header allmenu_popup
-$('.btn_allmenu_open').click(function() {
-  $('.allmenu_popup').css({'display':'flex'});
-})
-$('.btn_allmenu_close').click(function() {
-  $('.allmenu_popup').hide();
+// header lang_wrap
+$('.lang_wrap button').click(function() {
+  $('.lang_wrap button, .lang_wrap ul').toggleClass('open')
 })
 
 // header search_popup
@@ -22,6 +19,15 @@ $('.btn_search_open').click(function() {
 $('.btn_allmenu_close').click(function() {
   $('.search_popup').hide();
 })
+
+// header allmenu_popup
+$('.btn_allmenu_open').click(function() {
+  $('.allmenu_popup').css({'display':'flex'});
+})
+$('.btn_allmenu_close').click(function() {
+  $('.allmenu_popup').hide();
+})
+
 // main_visual swiper
 const swiper1 = new Swiper('#swp1', {
   effect: 'fade',

@@ -50,6 +50,7 @@ header nav #gnb .dep2 li {
 }
 header nav #gnb .dep2 li:hover {
   color: var(--p_blue2);text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 /* on, after */
@@ -79,60 +80,75 @@ header .header_uitl {
   display: flex;gap: 20px;align-items: center;
   height: 100%;font-size: 18px;font-weight: 600;
 }
-.header_uitl button {}
 
-.header_uitl .lang_wrap {}
-.header_uitl .lang_wrap ul {display: none;}
+/* header_uitl lagn_wrap */
+.header_uitl .lang_wrap {position: relative;}
+.header_uitl .lang_wrap ul {
+  position: absolute;left: -50%;top: 150%;
+  width: 100px;height: 100px;
+  background: var(--p_gray);border-radius: 10px;
+  display: flex;flex-direction: column;padding: 20px 30px;
+  align-items: center;gap: 10px;
+  filter: drop-shadow(3px 3px 3px #746C6C);
+  opacity: 0;transition: opacity 0.3s;
+}
+.header_uitl .lang_wrap ul.open {opacity: 1;}
 
-.header_uitl .search_wrap {}
+/* header_uitl search_wrap */
+.header_uitl .search_wrap {
+  position: relative;
+}
 .header_uitl .search_wrap .search_popup {
-  display: none;
+  position: absolute;top: 50px;left: -300px;
+  display: none;flex-direction: row;justify-content: center;
+  align-items: center;gap: 10px;
+  padding: 20px;z-index: 1000;
 }
 .header_uitl .search_wrap .search_popup form {
-  border: 1px solid #000;
-  display: flex;flex-direction: row;
+  display: flex;flex-direction: row;gap: 10px;
+  width: 320px;height: 50px;background: #FFF;
+  border-radius: 10px;
+  justify-content: center;align-items: center;text-align: center;
 }
 
-.header_uitl .allmenu_popup {
-  display: none;position: fixed;
-  right: 0;top: 0;
-  background: rgba(255, 255, 255, 0.9);color: #333;
-}
+/* header_uitl allmenu_popup */
+.header_uitl .allmenu_popup {display: none;}
 .header_uitl .allmenu_wrap .allmenu_gnb {
   font-size: 18px;font-weight: normal;
-  border: 1px solid #000;
+  position: fixed;left: 0;right: 0;top: 0;bottom: 0;
+  background: rgba(0, 0, 0, 0.9);color: #333;
+  display: flex;justify-content: center;align-items: center;
+}
+.header_uitl .allmenu_wrap .allmenu_popup .btn_allmenu_close {
+  font-size: 20px;color: #FFF;
+  position: fixed;top: 30px;right: 3em;z-index: 10;
 }
 .header_uitl .allmenu_wrap .allmenu_gnb .dep1 {
-  border: 1px solid red;
-  display: flex;gap: 30px;padding: 120px;
-  font-size: 20px;font-weight: 700;
+  width: 1440px;height: 800px;background: #FFF;
+  display: flex;gap: 30px;padding: 50px 50px;
+  flex-wrap: wrap;
 }
-.header_uitl .allmenu_wrap .allmenu_gnb .dep1>li {
-  border: 1px solid yellowgreen;
+.header_uitl .allmenu_popup .allmenu_gnb .dep1>li {
+  width: calc(100% / 4 - 25px);
 }
-
+.header_uitl .allmenu_popup .allmenu_gnb .dep1>li>a {
+  font-size: 22px;font-weight: 700;
+  display: flex;flex-direction: row;gap: 10px;
+  border-bottom: 2px solid gray;padding-bottom: 10px;
+}
 .header_uitl .allmenu_wrap .allmenu_gnb .dep2 {
-  /* display: flex;gap: 20px; */
+  display: flex;flex-direction: column;
+  padding-top: 10px;gap: 10px;
 }
 .header_uitl .allmenu_wrap .allmenu_gnb .dep2>li {
-  border: 1px solid blue;
-  display: flex;flex-direction: column;gap: 20px;
-  font-size: 18px;font-weight: normal;
+  display: flex;gap: 25px;
+}
+.header_uitl .allmenu_wrap .allmenu_gnb .dep2>li>a {
+  font-size: 18px;font-weight: 700;
 }
 .header_uitl .allmenu_wrap .allmenu_gnb .dep3 {
-  border: 1px solid orange;
-  display: flex;flex-direction: row;gap: 10px;
-  font-size: 18px;text-align: left;
+  font-size: 16px;line-height: 25px;
 }
-.header_uitl .allmenu_wrap .allmenu_gnb {}
-
-.header_uitl .allmenu_wrap .btn_allmenu_open {}
-.header_uitl .allmenu_wrap .btn_allmenu_close {
-  font-size: 20px;
-  position: fixed;top: 30px;right: 3em;
-}
-.header_uitl .allmenu_wrap .btn_allmenu_open .line {}
-
 
 /* main */
 main {}
@@ -179,7 +195,10 @@ main .worship .box a {
 }
 main .worship .box img {
   width: 585px;height: 343px;
-  padding-bottom: 20px;
+  border: 1px solid #000;
+}
+main .worship .box img:hover {
+  opacity: 0.3;
 }
 main .worship .box p {font-size: 18px;font-weight: bold;color: var(--p_blue);}
 main .worship .box strong {font-size: 24px;font-weight: bold;margin-bottom: 16px;}

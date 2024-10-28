@@ -296,19 +296,15 @@ main .h3_dis p {font-size: 20px;font-weight: 600;color: lightgray;}
 }
 /* main - worship */
 main .worship {padding: 150px 0;}
-/* main .worship .inner {display: flex;flex-direction: column;gap: 55px;} */
 main .worship .box {
   padding-top: 55px;
   display: flex;gap: 25px;justify-content: center;
-  /* border: 1px solid green; */
 }
 main .worship .box a {
   display: flex;gap: 10px;flex-direction: column;
-  /* border: 1px solid red; */
 }
 main .worship .box img {
   width: 585px;height: 100%;
-  /* border: 1px solid #000; */
 }
 main .worship .box img:hover {
   opacity: 0.3;
@@ -412,6 +408,7 @@ main .edu_wrap .edu_box span {font-size: 18px;}
   main .edu_wrap .edu_box {flex-wrap: wrap;gap: 50px 20px;}
 }
 @media screen and (max-width: 640px) {
+  main .edu_wrap li {height: 400px;}
   main .edu_wrap .edu_box {gap: 50px;}
   main .edu_wrap .edu_box li:nth-child(even) {margin-top: 0;}
 }
@@ -429,8 +426,6 @@ main .newFam_wrap #swp2 .img_box {
 main .newFam_wrap #swp2 .swiper-wrapper {
   transition-timing-function: linear;
 }
-main .newFam_wrap #swp2 .img_box img {}
-main .newFam_wrap #swp2 li:hover .text_box {}
 main .newFam_wrap #swp2 .text_box {
   display: flex;gap: 6px;flex-direction: column;
   align-items: center;
@@ -448,15 +443,13 @@ main .photo_wrap .photo_box {
   grid-template-columns: 2fr repeat(2, 1fr);
   grid-auto-rows: 250px;
 }
-main .photo_wrap .photo_box .item_big {
-  grid-row: 1 / 3;
-}
+main .photo_wrap .photo_box .item_big {grid-row: 1 / 3;}
 main .photo_wrap a img {
-  height: 100%;width: 100%;border-radius: 10px;
-  object-fit: cover;
+  height: 100%;width: 100%;border-radius: 10px;object-fit: cover;
 }
 
 @media screen and (max-width: 640px) {
+  main .inner {padding: 0 8%;}
   main .photo_wrap .photo_box {display: flex;flex-direction: column;}
 }
 /* footer */

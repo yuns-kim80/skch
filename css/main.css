@@ -267,12 +267,28 @@ main .h3_dis p {font-size: 20px;font-weight: 600;color: lightgray;}
 
 @media screen and (max-width: 1440px) {
   #swp1 {height: 750px;}
+  #swp1 .swiper-slide .text1 strong {font-size: 45px;}
+  #swp1 .swiper-slide .text2 strong {font-size: 45px;}
 }
 @media screen and (max-width: 1024px) {
   #swp1 {height: 533px;}
+  #swp1 .swiper-slide .text1 strong {font-size: 40px;}
+  #swp1 .swiper-slide .text2 strong {font-size: 40px;}
+  #swp1 .swiper-slide .text1 span {font-size: 24px;}
+  #swp1 .swiper-slide .text2 span {font-size: 24px;}
+  #swp1 .swiper-slide .text1 p {font-size: 18px;}
+  #swp1 .swiper-slide .text2 p {font-size: 18px;}
 }
 @media screen and (max-width: 640px) {
   #swp1 {height: 333px;}
+  #swp1 .swiper-slide .text1 {gap: 10px;}
+  #swp1 .swiper-slide .text2 {gap: 10px;}
+  #swp1 .swiper-slide .text1 strong {font-size: 30px;}
+  #swp1 .swiper-slide .text2 strong {font-size: 30px;}
+  #swp1 .swiper-slide .text1 span {font-size: 20px;}
+  #swp1 .swiper-slide .text2 span {font-size: 20px;}
+  #swp1 .swiper-slide .text1 p {font-size: 16px;line-height: 18px;}
+  #swp1 .swiper-slide .text2 p {font-size: 16px;line-height: 18px;}
   #swp1 .swiper-button-prev, .swiper-button-next {display: none;}
 }
 /* main - worship */
@@ -310,6 +326,7 @@ main .worship .box span {font-size: 16px;}
   main .worship .box {gap: 10px;}
 }
 @media screen and (max-width: 640px) {
+  main .worship {padding: 80px 0;}
   .inner {padding: 0 3%;}
   main .worship .box {flex-wrap: wrap;}
 }
@@ -417,7 +434,9 @@ main .newFam_wrap #swp2 .text_box {
 }
 main .newFam_wrap #swp2 .text_box span {color: gray;}
 main .newFam_wrap #swp2 .text_box strong {font-size: 18px;font-weight: 600;}
-
+@media screen and (max-width: 640px) {
+  main .newFam_wrap {padding: 80px 0;}
+}
 /* main - photo_wrap */
 main .photo_wrap {padding: 80px 0;}
 main .photo_wrap .photo_box {

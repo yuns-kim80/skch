@@ -263,7 +263,7 @@ main .worship {padding: 150px 0;}
 main .worship .box {
   padding-top: 55px;
   display: flex;gap: 25px;justify-content: center;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 main .worship .box a {
   display: flex;gap: 10px;flex-direction: column;
@@ -271,7 +271,7 @@ main .worship .box a {
 }
 main .worship .box img {
   width: 585px;height: 100%;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 main .worship .box img:hover {
   opacity: 0.3;
@@ -348,7 +348,7 @@ main .edu_wrap li {
   background-size: cover;border-radius: 10px;
 }
 main .edu_wrap li:hover {
-  animation-duration: 1s;animation-name: slide-up;
+  animation-duration: 0.5s;animation-name: slide-up;
 }
 @keyframes slide-up {
   from {transform: translateY(0);}

@@ -51,7 +51,7 @@ const swiper2 = new Swiper('#swp2', {
   autoplay: {
     delay: 0,
   },
-  speed: 2000,
+  speed: 3000,
   loop: true,
 });
 // btn_gotop

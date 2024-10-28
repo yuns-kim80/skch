@@ -110,6 +110,7 @@ header .header_uitl {
   border-radius: 10px;
   justify-content: center;align-items: center;text-align: center;
 }
+.header_uitl .search_wrap .search_popup form input {width: 200px;}
 
 /* header_uitl allmenu_popup */
 .header_uitl .allmenu_popup {display: none;}

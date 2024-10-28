@@ -267,11 +267,13 @@ main .h3_dis p {font-size: 20px;font-weight: 600;color: lightgray;}
 
 @media screen and (max-width: 1440px) {
   #swp1 {height: 750px;}
+  #swp1 .swiper-slide {padding: 50px;}
   #swp1 .swiper-slide .text1 strong {font-size: 45px;}
   #swp1 .swiper-slide .text2 strong {font-size: 45px;}
 }
 @media screen and (max-width: 1024px) {
   #swp1 {height: 533px;}
+  #swp1 .swiper-slide {padding: 50px;}
   #swp1 .swiper-slide .text1 strong {font-size: 40px;}
   #swp1 .swiper-slide .text2 strong {font-size: 40px;}
   #swp1 .swiper-slide .text1 span {font-size: 24px;}
@@ -281,6 +283,7 @@ main .h3_dis p {font-size: 20px;font-weight: 600;color: lightgray;}
 }
 @media screen and (max-width: 640px) {
   #swp1 {height: 333px;}
+  #swp1 .swiper-slide {padding: 50px;}
   #swp1 .swiper-slide .text1 {gap: 10px;}
   #swp1 .swiper-slide .text2 {gap: 10px;}
   #swp1 .swiper-slide .text1 strong {font-size: 30px;}
